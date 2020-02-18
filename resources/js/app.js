@@ -1,10 +1,10 @@
-
 require('./bootstrap');
-import Vue from 'vue'
+
+import Vue from 'Vue'
 import App from './App.vue'
-window.Vue = require('vue');
+import router from './router'
 
-
-new Vue({
-    render: h => h(App)
-}). $mount('#app')
+new Vue ({
+  router,
+  render: h => h(App)
+}).$mount('app')
